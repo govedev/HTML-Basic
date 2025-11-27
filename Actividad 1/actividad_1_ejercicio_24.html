@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Actividad 1 - Ejercicio 24</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Completar</legend>
+                <p>Rellene la siguiente información con sus datos personales:</p>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni">
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+                <p>Qué estás estudiando?</p>
+                <input type="checkbox" id="asir" name="estudios_asir" value="asir">
+                <label for="asir">ASIR</label>
+                <br>
+                <input type="checkbox" id="dam" name="estudios_dam" value="dam">
+                <label for="dam">DAM</label>
+                <br>
+                <input type="checkbox" id="daw" name="estudios_daw" value="daw">
+                <label for="daw">DAW</label>
+                <br><br>
+                <select name="estudios_lista" size="4">
+                    <option value="smir">SMIR</option>
+                    <option value="asir">ASIR</option>
+                    <option value="dam">DAM</option>
+                    <option value="daw">DAW</option>
+                </select>
+                <p>
+                    <label for="comentario">Aquí puedes aportar un comentario:</label>
+                    <br>
+                    <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea>
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+        </form>
+    </body>
+</html>

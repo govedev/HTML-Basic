@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Actividad 1 - Ejercicio 15</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HOJA DE INSCRIPCIÓN</h1>
+        <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend><strong>DATOS PERSONALES</strong></legend>
+                <p>
+                    <label for="nombre">NOMBRE:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="apellidos">APELLIDOS:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni">
+                </p>
+                <p>
+                    <label for="loc_nacimiento">LOC. NACIMIENTO:</label>
+                    <input type="text" id="loc_nacimiento" name="loc_nacimiento">
+                    <label for="provincia">PROVINCIA:</label>
+                    <select name="provincia">
+                        <option value="almeria">Almería</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="granada">Granada</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="jaen">Jaén</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="sevilla">Sevilla</option>
+                    </select>
+                    <input type="text" id="provincia" name="provincia">
+                    <label for="fecha_nacimiento">FECHA NACIMIENTO:</label>
+                    <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa">
+                </p>
+                <p>
+                    <label for="direccion">DIRECCIÓN:</label>
+                    <input type="text" id="direccion" name="direccion">
+                    <label for="cod_postal">COD. POSTAL:</label>
+                    <input type="text" id="cod_postal" name="cod_postal">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="tel_movil">Tel. Móvil:</label>
+                    <input type="tel" id="tel_movil" name="tel_movil">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><strong>FORMA DE ACCESO</strong></legend>
+                <p>Forma de acceso</p>
+                <ul>
+                    <li><input type="radio" id="directo" name="forma_acceso" value="directo"> <label for="directo">DIRECTO</label></li>
+                    <ul>
+                        <li><input type="radio" id="logse" name="forma_acceso" value="logse"> <label for="logse">BACHILLERATO LOGSE</label></li>
+                        <li><input type="radio" id="experimental" name="forma_acceso" value="experimental"> <label for="experimental">BACHILLERATO EXPERIMENTAL</label></li>
+                        <li><input type="radio" id="cou" name="forma_acceso" value="cou"> <label for="cou">COU</label></li>
+                        <li><input type="radio" id="fp2" name="forma_acceso" value="fp2"> <label for="fp2">FP2</label></li>
+                        <li><input type="radio" id="cfgs" name="forma_acceso" value="cfgs"> <label for="cfgs">CFGS</label></li>
+                    </ul>
+                    <li><input type="radio" id="prueba_libre" name="forma_acceso" value="prueba_libre"> <label for="prueba_libre">PRUEBA LIBRE</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend><strong>DOCUMENTOS ADJUNTOS</strong></legend>
+                <ul>
+                    <li><input type="checkbox" id="fotocopia_dni" name="doc_dni" value="si"> <label for="fotocopia_dni">Fotocopia DNI</label></li>
+                    <li><input type="checkbox" id="certificado_academico" name="doc_certificado" value="si"> <label for="certificado_academico">Certificado académico</label></li>
+                    <li>
+                        <input type="checkbox" id="otros_documentos" name="doc_otros" value="si"> 
+                        <label for="otros_documentos">Otros documentos (especificar):</label>
+                        <input type="text" id="otros_especificar" name="otros_especificar">
+                    </li>
+                </ul>
+                <input type="file" name="adjunto">
+            </fieldset>
+            <p>
+                <input type="submit" value="ENVIAR SOLICITUD">
+            </p>
+        </form>
+    </body>
+</html>

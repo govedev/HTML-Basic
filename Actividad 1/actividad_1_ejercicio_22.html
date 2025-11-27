@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Actividad 1 - Ejercicio 22</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Rellenar</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </p>
+                <p>Elige un idioma:</p>
+                <input type="radio" id="ingles" name="idioma" value="ingles">
+                <label for="ingles">Inglés</label>
+                <br>
+                <input type="radio" id="italiano" name="idioma" value="italiano">
+                <label for="italiano">Italiano</label>
+                <br>
+                <input type="radio" id="frances" name="idioma" value="frances">
+                <label for="frances">Francés</label>
+                <p>
+                    <label for="conector">Elige un conector:</label>
+                    <br>
+                    <select id="conector" name="conector">
+                        <option value="usb">USB</option>
+                        <option value="hdmi">HDMI</option>
+                        <option value="vga">VGA</option>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Indique su sexo</legend>
+                <p>Indique su sexo:</p>
+                <select name="sexo_lista" size="2">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+                <br><br>
+                <input type="checkbox" id="mujer" name="sexo_mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+                <br>
+                <input type="checkbox" id="hombre" name="sexo_hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>

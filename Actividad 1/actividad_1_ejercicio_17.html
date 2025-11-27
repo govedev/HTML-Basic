@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Actividad 1 - Ejercicio 17</title>
+        <style>
+            body {
+                font-family: serif;
+            }
+
+            h2 {
+                text-align: center;
+                font-weight: bold;
+            }
+            form {
+                width: 500px;
+            }
+            .seccion {
+                background-color: #eeeeee;
+                border: 1px solid #000000;
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+            .fila {
+                margin-bottom: 8px;
+            }
+            label {
+                display: inline-block;
+                width: 180px;
+            }
+            .seccion-radios {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+            .opciones {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .opciones label {
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Formulario de reserva de salas</h2>
+        <form method="GET" action="">
+            <div class="seccion">
+                <div class="fila">
+                    <label for="nombre">Tu nombre: *</label>
+                    <input type="text" id="nombre" name="nombre" value="nombre">
+                </div>
+                <div class="fila">
+                    <label for="email">Tu correo electrónico: *</label>
+                    <input type="email" id="email" name="correo_electronico" value="correo electrónico">
+                </div>
+                <div class="fila">
+                    <label for="departamento">Departamento: *</label>
+                    <select id="departamento" name="departamento">
+                        <option value="ventas">Ventas</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="recursos_humanos">Recursos Humanos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="seccion-radios">
+                <label>Tipo de sala que desea reservar:</label>
+                <div class="opciones">
+                    <input type="radio" id="tipoA" name="tipo_sala" value="A" checked>
+                    <label for="tipoA">Tipo A</label><br>
+                    <input type="radio" id="tipoB" name="tipo_sala" value="B">
+                    <label for="tipoB">Tipo B</label><br>
+                    <input type="radio" id="tipoC" name="tipo_sala" value="C">
+                    <label for="tipoC">Tipo C</label>
+                </div>
+            </div>
+            <div class="seccion">
+                <label>Requisitos extra:</label>
+                <div class="opciones">
+                    <input type="checkbox" id="caballete" name="extra_caballete" value="si" checked>
+                    <label for="caballete">Caballete y bolígrafos</label><br>
+                    <input type="checkbox" id="television" name="extra_television" value="si" checked>
+                    <label for="television">Televisión</label><br>
+                    <input type="checkbox" id="cafe" name="extra_cafe" value="si">
+                    <label for="cafe">Café, té y agua</label>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="fila">
+                    <label for="fecha">Fecha de la reserva: *</label>
+                    <input type="text" id="fecha" name="fecha_reserva" value="31/mm/aaaa">
+                </div>
+                <div class="fila">
+                    <label for="hora">Hora de la reserva: *</label>
+                    <input type="text" id="hora" name="hora_reserva" value="--:--">
+                </div>
+            </div>
+            <p style="text-align: center;">
+                <input type="submit" value="Enviar Reserva">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Actividad 1 - Ejercicio 16</title>
+    </head>
+    <body>
+        <h2>FORMULARIO DE RESERVA DE SALAS</h2>
+        <form method="GET" action="">
+            <p>
+                <label for="nombre">Tu nombre: *</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="email">Correo electrónico: *</label>
+                <input type="email" id="email" name="correo_electronico" required>
+            </p>
+            <p>
+                <label for="departamento">Departamento: *</label>
+                <select id="departamento" name="departamento" required>
+                    <option value="ventas">Ventas</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="recursos_humanos">Recursos Humanos</option>
+                </select>
+            </p>
+            <p>
+                Tipo de sala que desea reservar:
+                <br>
+                <input type="radio" id="opcionA" name="tipo_sala" value="A">
+                <label for="opcionA">Opcion A</label>
+                <br>
+                <input type="radio" id="opcionB" name="tipo_sala" value="B">
+                <label for="opcionB">Opcion B</label>
+                <br>
+                <input type="radio" id="opcionC" name="tipo_sala" value="C">
+                <label for="opcionC">Opcion C</label>
+            </p>
+            <p>
+                Requisitos extra:
+                <br>
+                <input type="checkbox" id="caballete" name="extra_caballete" value="si">
+                <label for="caballete">Caballete y bolígrafos</label>
+                <br>
+                <input type="checkbox" id="television" name="extra_television" value="si">
+                <label for="television">Televisión</label>
+                <br>
+                <input type="checkbox" id="cafe" name="extra_cafe" value="si">
+                <label for="cafe">Café, té y agua</label>
+            </p>
+            <p>
+                <label for="fecha">Fecha de la reserva:*</label>
+                <input type="text" id="fecha" name="fecha_reserva" placeholder="dd/mm/aaaa" required>
+            </p>
+            <p>
+                <label for="hora">Hora de la reserva:*</label>
+                <input type="text" id="hora" name="hora_reserva" placeholder="--:--" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar Reserva">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Actividad 1 - Ejercicio 23</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Rellenar</legend>
+                <p>Elige una asignatura:</p>
+                <input type="radio" id="lengua" name="asignatura" value="lengua">
+                <label for="lengua">Lengua</label>
+                <br>
+                <input type="radio" id="matematicas" name="asignatura" value="matematicas">
+                <label for="matematicas">Matemáticas</label>
+                <br>
+                <input type="radio" id="historia" name="asignatura" value="historia">
+                <label for="historia">Historia</label>
+                <br>
+                <input type="radio" id="geografia" name="asignatura" value="geografia">
+                <label for="geografia">Geografía</label>
+
+                <p>Elige un editor:</p>
+                <input type="checkbox" id="notepad" name="editor_notepad" value="notepad">
+                <label for="notepad">Notepad</label>
+                <br>
+                <input type="checkbox" id="emacs" name="editor_emacs" value="emacs">
+                <label for="emacs">Emacs</label>
+                <br>
+                <input type="checkbox" id="otro" name="editor_otro" value="otro">
+                <label for="otro">Otro</label>
+                <p>
+                    <label for="texto">Escriba aquí:</label>
+                    <br>
+                    <textarea id="texto" name="texto" rows="5" cols="40"></textarea>
+                </p>
+                <p>
+                    <label for="procesador">Selecciona un procesador:</label>
+                    <br>
+                    <select id="procesador" name="procesador">
+                        <option value="amd">AMD</option>
+                        <option value="intel">Intel</option>
+                    </select>
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+        </form>
+    </body>
+</html>

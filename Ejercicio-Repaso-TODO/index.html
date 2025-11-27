@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Congreso de Desarrollo Web & Sistemas</title>
+</head>
+<body>
+  <header>
+    <h1>II Congreso de Desarrollo Web & Sistemas</h1>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h3>Introducción al evento</h3>
+      <p>Bienvenido al evento más importante del año para los alumnos de <strong>1º DAW</strong>. Aquí aprenderemos sobre Lenguajes de Marcas y sistemas empresariales.</p>
+      <p>El precio de la entrada es de <s>50€</s> <strong>¡Gratis!</strong> para estudiantes.<br> No olvides traer tu botella de H2O para hidratarte mientras calculamos la complejidad O(n2) de nuestros algoritmos.</p>
+    </section>
+
+    <aside>
+      <h3>Temario de las conferencias</h3>
+      <ol type="I">
+        <li>
+          <strong>Frontend Moderno</strong>
+          <ul type="square" >
+            <li>HTML5 Semántico</li>
+            <li>CSS3 y Flexbox</li>
+            <li>JavaScript Básico</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Backend y Servidores</strong>
+          <ul>
+            <li>Introducción a PHP</li>
+            <li>Bases de Datos</li>
+            <li>Conceptos claves</li>
+            <li>
+              Conceptos Clave:
+              <dl>
+                <dt>Apache</dt>
+                <dd>Servidor web HTTP de código abierto.</dd>
+                <dt>MySQL</dt>
+                <dd>Sistema de gestión de bases de datos relacional.</dd>
+              </dl>
+            </li>
+          </ul>
+        </li>
+
+        <li>Despliegue</li>
+      </ol>
+    </aside>
+
+    <hr>
+
+    <section>
+      <h3>Patrocinadores y Enlaces (Haz clic en las imágenes)</h3>
+      <a href="https://www.html.com"><img width="100px" src="https://cdn-icons-png.flaticon.com/512/919/919827.png"></a>
+      <a href="https://www.css.com"><img width="100px" src="https://images.seeklogo.com/logo-png/18/1/css3-logo-png_seeklogo-186678.png"></a>
+      <a href="https://www.javascript.com"><img width="100px" src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"></a>
+    </section>
+
+    <article>
+      <h3>Horario del Congreso</h3>
+      <table border="2px">
+        <tr style="background-color: lightgray;">
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miercoes</th>
+        </tr>
+        <tr>
+          <td>09:00 - 11:00</td>
+          <td>HTML5 Avanzado</td>
+          <td rowspan="2" align="center" valign="center"><strong>Taller Práctico Full Stack</strong></td>
+          <td>Sistema ERP</td>
+        </tr>
+        <tr>
+          <td>11:00 - 13:00</td>
+          <td>CSS Grid</td>
+          <td>Ingés Técnico</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(255, 255, 156);" align="center" colspan="4">DESCANSO/ALMUERZO</td>
+        </tr>
+        <tr>
+          <td>15:00 - 17:00</td>
+          <td>Formularios</td>
+          <td>Accesibilidad</td>
+          <td>SEO</td>
+        </tr>
+        <tr>
+          <td style="background-color: lightgray;" align="right" colspan="4">Lugar: Salón de Actos IES Alixar</td>
+        </tr>
+      </table>
+    </article>
+
+    <hr>
+
+    <h3>Formulario de Inscripcion</h3>
+
+    <form method="GÉT">
+      
+      <fieldset>
+      <legend><strong>Datos Personales</strong></legend>
+        <label>
+          <strong>Nombre:</strong>
+          <input name="name" type="text" placeholder="Tu nombre..."/>
+        </label>
+        
+
+        <br>
+        <br>
+
+        <label>
+          <strong>Email:</strong>
+          <input name="email" type="email" value="@g.educaand.es"/>
+        </label>
+
+        <br>
+        <br>
+
+        <label>
+          <strong>Contraseña:</strong>
+          <input name="password" type="password"/>
+        </label>
+
+        <br>
+        <br>
+
+        <label>
+          <strong>Provincia:</strong>
+          <select name="location">
+            <option value="SE">Sevilla</option>
+            <option value="HU">Huelva</option>
+            <option value="CA">Cádiz</option>
+            <option value="MA">Málaga</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <br>
+      
+      
+      <fieldset>
+      <legend><strong>Detalles del Curso</strong></legend>
+        <p>¿Qué turno prefieres? (Radio Buttons)</p>
+        <label>
+          <input checked name="turn" type="radio" value="M"/>Mañana
+          <br>
+        </label>
+        
+        <label>
+          <input name="turn" type="radio" value="A"/>Tarde
+        </label>
+
+        <p>Talleres extra (Chekboxes)</p>
+        <label>
+          <input name="extras" type="checkbox" value="ROB"/>Robótica
+        </label>
+        <br>
+        <label>
+          <input name="extras" type="checkbox" value="HACK"/>Hacking Ético
+        </label>
+        
+        <br>
+        <br>
+
+        <label for="1">Comentarios:</label> <br>
+        <textarea id="1" name="questions" placeholder="Escribe aquí tus dudas..."></textarea>
+      </fieldset>
+      <br>
+
+
+      <button type="submit">Enviar Inscripcion</button>
+      <button type="reset">Borrar todo</button>
+    </form>
+  </main>
+
+  <footer style="text-align: center;">
+    <hr>
+    <p>Ejercicio práctico basado en el PDF de Lenguajes de Marcas - Unidad 2</p>
+  </footer>
+</body>
+</html>
