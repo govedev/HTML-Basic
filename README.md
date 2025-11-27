@@ -1,8 +1,6 @@
 
 # 📚 Apuntes: Lenguajes de Marcas - Unidad 2 (HTML)
 
-Resumen práctico para 1º DAW basado en los ejercicios de clase.
-
 <hr>
 
 ## 1. Estructura Básica
