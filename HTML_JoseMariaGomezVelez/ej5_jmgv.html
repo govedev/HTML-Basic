@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro GameFriends</title>
+</head>
+<body>
+    <h1>Registro en GameFriends</h1>
+    <p>GameFriends es una red social para jugadores donde puedes compartir tus partidas a otros gamers y descubrir nuevos videojuegos. Rellena el siguiente formulario para crear cuenta</p>
+    <form method="get">
+        <fieldset>
+            <legend>Datos de acceso</legend>
+            <br>
+            <label>Nombre de usuario:*
+                <input type="text">
+            </label>
+            <br>
+            <br>
+            <label>Contraseña:*
+                <input type="password">
+            </label>
+            <br>
+            <br>
+            <label>Repite la contraseña:
+                <input type="password">
+            </label>
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales y preferencias</legend>
+            <br>
+            <label>Correo electrónico:
+                <input type="email" placeholder="usuario@correo.com">
+            </label>
+            <br><br>
+            <label>Adjunta tu imagen de perfil:
+                <input type="file">
+            </label>
+            <br><br>
+            <label>¿Qué plataforma utilizas normalmente?
+                <select>
+                    <option>Seleccione una opción</option>
+                    <option>PC</option>
+                    <option>PlayStation</option>
+                    <option>Xbox</option>
+                    <option>Nintendo Switch</option>
+                    <option>Móvil</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Géneros de videojuegos que te gustan:
+                <label><br><br>
+                    <input type="checkbox">Acción
+                </label><br>
+                <label>
+                    <input type="checkbox">Deportes
+                </label><br>
+                <label>
+                    <input type="checkbox">Estrategia
+                </label><br>
+                <label>
+                    <input type="checkbox">Aventura
+                </label><br>
+                <label>
+                    <input type="checkbox">Otros
+                </label><br>
+            </label>
+            <br>
+            <label>Tu juego favorito:
+                <input type="text">
+            </label>
+            <br><br>
+            <label>Descripción/Biografía <br>
+                <textarea rows="5" cols="40" placeholder="Cuéntanos algo sobre tí..."></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <label>
+            <input type="checkbox">Acepto la <strong>política de privacidad*</strong>
+        </label>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
